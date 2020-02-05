@@ -13,3 +13,4 @@ selectedpath = input("insert the path to where you want to download it to (defau
 # print("Selected video is called:", videotitle + ". The video will use up:", filesize*10**6, "\nAre you sure you want to download it? y/N")
 
 # actually download
+# youtube-dl -f "(best)[protocol^=https]" https://www.youtube.com/watch?v=GLSG_Wh_YWc
