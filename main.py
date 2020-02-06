@@ -4,7 +4,7 @@ import os
 link = input("Insert link here: ")
 
 
-videotitle = os.system('youtube-dl --skip-download --get-title ' + link)
+videotitle = os.system('youtube-dl --skip-download --get-title -q ' + link)
 
 videooraudio = input("\nDo you want to download only the audio, or both video and audio? v/a: ")
 ifvideo = ""
@@ -19,7 +19,6 @@ if videooraudio == "v":
     ifvideoend = ']" '
 
 elif videooraudio == "a":
-    selectedpath = input("insert the path to where you want to download it to (default is cwd)")
     videooraudio = "bestaudio) "
 
 
